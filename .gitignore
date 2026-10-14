@@ -22,3 +22,13 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# Local environment files and secrets
+.env.*
+!.env.example
+
+# Local database
+/database/*.sqlite
+
+# User-uploaded payment proof files
+/storage/app/public/payment-proofs/
