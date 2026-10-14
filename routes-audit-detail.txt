@@ -1,0 +1,249 @@
+﻿
+
+  GET|HEAD        admin/chat ........................................... admin.chat.index ÔÇ║ Admin\ChatController@index
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        admin/chat/answered ............................ admin.chat.answered ÔÇ║ Admin\ChatController@answered
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        admin/chat/unanswered ...................... admin.chat.unanswered ÔÇ║ Admin\ChatController@unanswered
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        admin/chat/{conversation} .............................. admin.chat.show ÔÇ║ Admin\ChatController@show
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  PATCH           admin/chat/{conversation}/archive ................ admin.chat.archive ÔÇ║ Admin\ChatController@archive
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  PATCH           admin/chat/{conversation}/close ...................... admin.chat.close ÔÇ║ Admin\ChatController@close
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  POST            admin/chat/{conversation}/message ............ admin.chat.message ÔÇ║ Admin\ChatController@sendMessage
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        admin/dashboard ........................................ admin.dashboard ÔÇ║ DashboardController@index
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        brands ........................................................ brands.index ÔÇ║ BrandController@index
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  POST            brands ........................................................ brands.store ÔÇ║ BrandController@store
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        brands/create ............................................... brands.create ÔÇ║ BrandController@create
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        brands/{brand} .................................................. brands.show ÔÇ║ BrandController@show
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  PUT|PATCH       brands/{brand} .............................................. brands.update ÔÇ║ BrandController@update
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  DELETE          brands/{brand} ............................................ brands.destroy ÔÇ║ BrandController@destroy
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        brands/{brand}/edit ............................................. brands.edit ÔÇ║ BrandController@edit
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        cart ............................................................. cart.index ÔÇ║ CartController@index
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  POST            cart/add/{product} ................................................... cart.add ÔÇ║ CartController@add
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  PATCH           cart/{cart} .................................................... cart.update ÔÇ║ CartController@update
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  DELETE          cart/{cart} .................................................. cart.destroy ÔÇ║ CartController@destroy
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  GET|HEAD        categories ............................................. categories.index ÔÇ║ CategoryController@index
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  POST            categories ............................................. categories.store ÔÇ║ CategoryController@store
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        categories/create .................................... categories.create ÔÇ║ CategoryController@create
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        categories/{category} .................................... categories.show ÔÇ║ CategoryController@show
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  PUT|PATCH       categories/{category} ................................ categories.update ÔÇ║ CategoryController@update
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  DELETE          categories/{category} .............................. categories.destroy ÔÇ║ CategoryController@destroy
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        categories/{category}/edit ............................... categories.edit ÔÇ║ CategoryController@edit
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        chat ................................................. customer.chat ÔÇ║ Customer\ChatController@index
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  POST            chat/message ........................... customer.chat.message ÔÇ║ Customer\ChatController@sendMessage
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  GET|HEAD        checkout ......................................................... checkout ÔÇ║ OrderController@create
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  POST            checkout .................................................... checkout.store ÔÇ║ OrderController@store
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  GET|HEAD        customers ............................................... customers.index ÔÇ║ CustomerController@index
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  POST            customers ............................................... customers.store ÔÇ║ CustomerController@store
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        customers/create ...................................... customers.create ÔÇ║ CustomerController@create
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        customers/{customer} ...................................... customers.show ÔÇ║ CustomerController@show
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  PUT|PATCH       customers/{customer} .................................. customers.update ÔÇ║ CustomerController@update
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  DELETE          customers/{customer} ................................ customers.destroy ÔÇ║ CustomerController@destroy
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        customers/{customer}/edit ................................. customers.edit ÔÇ║ CustomerController@edit
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        login ............................................................. login ÔÇ║ AuthController@showLogin
+                  Ôçé web
+  POST            login ......................................................... login.process ÔÇ║ AuthController@login
+                  Ôçé web
+  POST            logout .............................................................. logout ÔÇ║ AuthController@logout
+                  Ôçé web
+                  Ôçé auth
+  GET|HEAD        orders ........................................................ orders.index ÔÇ║ OrderController@index
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  PUT             orders/{order} .............................................. orders.update ÔÇ║ OrderController@update
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  DELETE          orders/{order} ............................................ orders.destroy ÔÇ║ OrderController@destroy
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        orders/{order} .................................................. orders.show ÔÇ║ OrderController@show
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        orders/{order}/edit ............................................. orders.edit ÔÇ║ OrderController@edit
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  PATCH           orders/{order}/reject-payment ................ orders.reject-payment ÔÇ║ OrderController@rejectPayment
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  PATCH           orders/{order}/verify-payment ................ orders.verify-payment ÔÇ║ OrderController@verifyPayment
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        pesanan ........................................... customer.orders ÔÇ║ OrderController@customerOrders
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  GET|HEAD        pesanan/{order} ................................ customer.orders.show ÔÇ║ OrderController@customerShow
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  PATCH           pesanan/{order}/batal .............................. customer.orders.cancel ÔÇ║ OrderController@cancel
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  DELETE          pesanan/{order}/hapus .................... customer.orders.destroy ÔÇ║ OrderController@customerDestroy
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  POST            pesanan/{order}/payment-proof ... customer.orders.payment-proof ÔÇ║ OrderController@uploadPaymentProof
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  PATCH           pesanan/{order}/received ....................... customer.orders.received ÔÇ║ OrderController@received
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:customer
+  GET|HEAD        products .................................................. products.index ÔÇ║ ProductController@index
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  POST            products .................................................. products.store ÔÇ║ ProductController@store
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        products/create ......................................... products.create ÔÇ║ ProductController@create
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        products/{product} .......................................... products.show ÔÇ║ ProductController@show
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  PUT|PATCH       products/{product} ...................................... products.update ÔÇ║ ProductController@update
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  DELETE          products/{product} .................................... products.destroy ÔÇ║ ProductController@destroy
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        products/{product}/edit ..................................... products.edit ÔÇ║ ProductController@edit
+                  Ôçé web
+                  Ôçé auth
+                  Ôçé role:admin
+  GET|HEAD        register .................................................... register ÔÇ║ AuthController@showRegister
+                  Ôçé web
+  POST            register ................................................ register.process ÔÇ║ AuthController@register
+                  Ôçé web
+  GET|HEAD        storage/{path} storage.local ÔÇ║ vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:98
+  PUT             storage/{path} storage.local.upload ÔÇ║ vendor/laravel/framework/src/Illuminate/Filesystem/FilesystemServiceProvider.php:106
+  GET|HEAD        store ........................................................... store.home ÔÇ║ StoreController@index
+                  Ôçé web
+  GET|HEAD        up ..... vendor/laravel/framework/src/Illuminate/Foundation/Configuration/ApplicationBuilder.php:219
+
+                                                                                                   Showing [66] routes
+
